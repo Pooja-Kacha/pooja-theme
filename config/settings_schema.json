@@ -6,7 +6,7 @@
           "type": "text",
           "id": "store_name",
           "label": "Store Name",
-          "default": "My Shopify Store"
+          "default": "My pooja Store"
         }
       ]
     }
