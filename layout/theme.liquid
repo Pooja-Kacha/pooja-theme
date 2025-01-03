@@ -6,11 +6,11 @@
   <title>{{ page_title }}</title>
   {{ content_for_header }}
   <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
-  <script src="{{ 'theme.js' | asset_url }}"></script>
+  <script src="{{ 'theme.js' | asset_url }}" defer></script>
 </head>
 <body>
-  {% section 'header' %}
   {{ content_for_layout }}
+  {% section 'header' %}
   {% section 'footer' %}
 </body>
 </html>
