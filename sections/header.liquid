@@ -3,7 +3,7 @@
     type="text" 
     name="q" 
     class="search"
-    placeholder="Search here..." 
+    placeholder="{{ section.settings.search_placeholder }}" 
     aria-label="Search"
     required
   >
@@ -13,3 +13,28 @@
     </svg>
   </button>
 </form>
+
+{% schema %}
+{
+  "name": "Custom Header",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
+    {
+      "type": "text",
+      "id": "search_placeholder",
+      "label": "Search Placeholder",
+      "default": "Search here..."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Header"
+    }
+  ]
+}
+{% endschema %}
+
